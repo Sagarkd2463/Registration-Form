@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+</head>
+
+<body>
+  {{>navbar}}
+  <div class="form signup_form">
+    <form action="/register" method="post" class="form-control" enctype="multipart/form-data">
+      <div>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" value="firstname" placeholder="Enter First Name">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" value="lastname" placeholder="Enter Last Name" >
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="email" placeholder="Enter Email">
+        <label for="gender">Gender</label>
+        <input type="radio" name="male" class="gender" value="male"><span>Male</span>
+        <input type="radio" name="female" class="gender" value="female"><span>Female</span>
+        <label for="phone">Phone</label>
+        <input type="number" name="phone" id="phone" value="phone" placeholder="Enter phone no">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" value="age" placeholder="Enter your age">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" value="password" placeholder="Enter password">
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" name="confirmpassword" id="confirmpassword" value="confirmpassword" placeholder="Enter confirm password">
+
+        <button type="submit" value="register">Register</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

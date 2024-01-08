@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+
+<body>
+  {{>navbar}}
+  <div class="form login_form">
+    <form action="/login">
+     <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" value="firstname" placeholder="Enter First Name">
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" value="lastname" placeholder="Enter Last Name" >
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" value="email" placeholder="Enter Email">
+         <label for="password">Password</label>
+        <input type="password" name="password" id="password" value="password" placeholder="Enter password">
+    </form>
+  </div>
+</body>
+
+</html>
